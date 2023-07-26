@@ -1,0 +1,49 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  }
+  .MainContainer{
+    padding: 3rem;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .child-form label,
+  .child-form input,
+  .child-form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .child-form input[type="text"],
+  .child-form input[type="date"],
+  .child-form input[type="tel"] {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #0d3aed;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .child-form button {
+    background-color: #1831f1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .child-form button:hover {
+    background-color: #5145a0;
+  }
+  

@@ -1,0 +1,159 @@
+.Dashboard1{
+    height: 99vh;
+   border: solid 2pt palevioletred;
+   caret-color: transparent;
+   overflow: hidden;
+   display: flex;
+   
+   }
+   
+   
+   .aside1{
+     width: 15rem;
+     height:100%;
+     margin: 2rem;
+     background-color: rgb(210, 211, 222);
+     border-radius: 8px;
+     border: solid 2pt red;
+   }
+   
+   .dp1{
+     background-color: rgb(24, 23, 23);
+     width: 5rem;
+     height:5rem;
+     border-radius: 50%;
+     margin-top: 1rem;
+     margin-left: 3.5rem;
+     margin-bottom: 3rem;
+   }
+   
+   .aside1 li {
+     width: 10rem;
+     height:7%;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.19);
+     margin: 1rem;
+     border-radius: 8px;
+     border: solid 2pt red;
+
+     list-style:none;
+     background-color:rgb(225, 216, 216);
+   
+   }
+   
+   
+   .board1{
+     width: 70rem;
+     height:90%;
+     background-color:white;
+     border: solid 2pt red;
+
+     margin: 2rem;
+     border-radius: 8px
+   }
+   
+   
+   .boardInner1{
+     width: 60rem;
+     height:40%;
+      margin: 2rem;
+     border-radius: 8px;
+     display :flex;
+   }
+   
+   
+   .biboxx11{
+     width: 29rem;
+     height:70%;
+     margin: 2rem;
+     background-color: rgb(234, 227, 228);
+     border-radius: 8px;
+     padding:1rem;
+     background-image: url("../../../Assets/history.png");
+     background-size: 3cm;
+       background-size: 3cm;
+     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+     background-repeat: no-repeat;
+   }
+   .biboxx1{
+     width: 29rem;
+     height:70%;
+     margin: 2rem;
+     background-color: rgb(234, 227, 228);
+     border-radius: 8px;
+     padding:1rem;
+     background-image: url("../../../Assets/processing-time.png");
+       background-size: 3cm;
+     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+     background-repeat:no-repeat;
+   }
+   .biboxx21{
+     width: 29rem;
+     height:70%;
+     margin: 2rem;
+     background-color: rgb(234, 227, 228);
+     border-radius: 8px;
+     padding:1rem;
+     background-image: url("../../../Assets/cash-withdrawal.png");
+       background-size: 3cm;
+     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+     background-repeat:no-repeat;
+     }
+     .biboxx31{
+       width: 29rem;
+       height:70%;
+       margin: 2rem;
+       background-color: rgb(234, 227, 228);
+       border-radius: 8px;
+       padding:1rem;
+         background-size: 3cm;
+         background-image: url(../../../Assets/email.png);
+       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+       background-repeat:no-repeat;
+     }
+   
+   .addButton1{
+     margin-bottom:auto;
+     background-color:black;
+     color:white;
+     border-radius: 1cm;
+     height:25%;
+     width:60%;
+     margin-top:30%;
+   }
+   .smallPageAddChild1{
+     background-color: white;
+     height: 50vh;
+     border: solid 2pt palevioletred;
+   border-radius: 0.8cm;
+     width: 100cm;
+   }
+   
+   #gender1 {
+       background-color: palevioletred;
+       color: rgb(57, 55, 59);
+       border: solid 2pt rgba(255, 255, 255, 0.316);
+       border-radius: 0.6cm;
+       margin-top: 0.5cm;
+       height: 1.2cm;
+       border: solid 2pt red;
+       width: 85%;
+       border: none;
+        outline: none;
+     }
+     .Find1{
+       background-color: palevioletred;
+       color: rgb(57, 55, 59);
+       border: solid 2pt rgba(255, 255, 255, 0.316);
+       border-radius: 0.6cm;
+       margin-top: 0.5cm;
+       height: 1.2cm;
+       border: solid 2pt red;
+       width: 85%; 
+       border: none;
+       outline: none;
+     }
+   .close1{
+     background-color: white;
+     margin-top: 0.5cm;
+     margin-right: 6cm;
+   } 

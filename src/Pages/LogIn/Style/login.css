@@ -1,0 +1,45 @@
+.LoginMainContainer{
+    height: 76.2vh;
+    background-color: white;
+    /* background: linear-gradient(to right, blue, white); */
+    padding: 5rem;
+    caret-color: transparent;
+
+
+}
+.LoginSemiMain{
+    height: 65%;
+    width: 20%;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    caret-color: transparent;
+    margin-bottom: -50%;
+    margin-left: 35%;
+    padding: 5rem;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.08);
+}
+.LoginEmail{
+    width: 130%;
+    height: 10%;
+    margin-left: -21%;
+    border: solid 2pt rgb(35, 8, 240);
+    padding: 1rem;
+    outline: none;
+    background-color: transparent;
+    caret-color: black;
+    border-radius: 1rem;
+    margin-top: 12%;
+}
+.LoginEmail1{
+    width: 130%;
+    height: 10%;
+    margin-left: -21%;
+    border: solid 2pt rgb(35, 8, 240);
+    padding: 1rem;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 1rem;
+    outline: none;
+    caret-color: black;
+    margin-top: 12%;
+}

@@ -1,0 +1,65 @@
+.LandingPageMainContainer{
+    height: 92%;
+    background-color: rgb(30,144,255);
+     display: flex;
+    border: solid 2pt rgb(253, 253, 253);
+    caret-color: transparent;
+}
+.BlueBox{
+    width: 50%;
+    height: 100%;
+}
+.ImageBox{
+    width:  50%;
+    background-image: url("../../../Assets/Sterlline.Image.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 655px; 
+}
+.LandingPage{
+    height: 100vh;
+}
+.LandingPageTopNav{
+    height: 7%;
+    background-image: url("../../../Assets/LatestStellineLogo.png");
+    background-size: auto 55px;
+    background-repeat: no-repeat;
+    caret-color: transparent;
+    list-style: none;
+}
+.LandingPageTopNavText{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 55%;
+    margin-bottom: -50%;
+}
+.LandingPageTopNavText li{
+    padding: 1rem;
+    cursor: pointer;
+}
+.LandingPageBlackButton{
+    width: 35%;
+    background-color: black;
+    height: 7%;
+    margin-top: 20%;
+    margin-left: 30%;
+    justify-content: center;
+    padding-top: 1rem;
+    text-align: center;
+    display: flex;
+    border-radius: 1rem;
+    color: antiquewhite;
+}
+.LandingPageBigText{
+    font-size: 2cm;
+    text-shadow:10px 10px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+    color: rgb(250, 246, 246);
+    margin-left: -47%;
+}
+.LandingPageBigText2{
+    color: white;
+    justify-content:flex-end;
+    margin-left: -30%;
+}

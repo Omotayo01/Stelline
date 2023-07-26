@@ -1,0 +1,100 @@
+.dashboard-container {
+    padding: 5px;
+    background-color: #7db1e9;
+    height: 94vh;
+    background-image: url("../../../Assets/_HoodMouse_-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 1rem;
+    width:  52%;
+    background-color: #f0f0f0;
+    margin-left: 20%;
+  }
+  .InformationinnerPTag1{
+    width: 60%;
+    border: solid 2pt rgb(9, 9, 9);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    height: 0.5rem;
+    padding: 1rem;
+
+  }
+  .HistoryMain{
+    background-color: rgb(135,206,235);
+    height: 100vh;
+
+
+  }
+  .order-box1 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-box h2 {
+    margin-bottom: 10px;
+  }
+  
+  .order-box img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .order-box p {
+    margin-bottom: 5px;
+  }
+  
+  .order-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .order-box button:hover {
+    background-color: #0056b3;
+  }
+  .ParentProceedToPaymentButton{
+    width: 50%;
+    height: 1cm;
+    border-radius: 0.4rem;
+    background-color: blue;
+    margin-left: 20%;
+    margin-bottom: 1rem;
+  }
+  .ParentProceedToPaymentButton:hover{
+    background-color: rgb(105, 105, 225);
+
+  }
+  .InformationinnerPTag{
+    width: 90%;
+    border: solid 2pt rgb(9, 9, 9);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    height: 1rem;
+    padding: 1rem;
+
+  }

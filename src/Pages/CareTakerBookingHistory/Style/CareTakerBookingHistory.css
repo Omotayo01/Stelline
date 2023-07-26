@@ -1,0 +1,75 @@
+.CareTakerdashboard-container {
+    padding: 20px;
+  }
+  
+  .CareTakerdashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .CareTakerdashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    gap: 20px;
+    width: 53%;
+  }
+  
+  .CareTakerorder-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .CareTakerinnerPTag1{
+     width: 70%;
+    border: solid 2pt rgb(9, 9, 9);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    height: 1rem;
+    padding: 1rem;
+  }
+  
+  .CareTakerorder-box h2 {
+    margin-bottom: 10px;
+  }
+  
+  .CareTakerorder-box img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .CareTakerorder-box p {
+    margin-bottom: 5px;
+  }
+  
+  .CareTakerorder-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .CareTakerorder-box button:hover {
+    background-color: #0056b3;
+  }
+  .CareTakerorder-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,0 +1,47 @@
+.about-container {
+    background-color: #a0b1e9; /* soft pink */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+    position: relative;
+}
+
+.about-title {
+    color: #2808f8; /* bright pink */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+
+.about-highlight, .about-signoff, .about-mission {
+    color: #2808f8; /* bright pink */
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 1.3em;
+}
+
+.get-started-button {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #2808f8; /* bright pink */
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.get-started-button:hover {
+    color: #2808f8; /* bright pink */
+}
