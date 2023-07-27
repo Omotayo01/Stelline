@@ -1,5 +1,5 @@
 .about-container {
-    background-color: #f5e0e6; /* soft pink */
+    background-color: ghostwhite; /* soft pink */
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -7,12 +7,14 @@
     text-align: center;
     margin: 50px;
     position: relative;
+    border-color: #0056b3;
 }
 
 .about-title {
-    color: #ff66b2; /* bright pink */
+    color: black; /* bright pink */
     font-size: 2em;
     margin-bottom: 20px;
+
 }
 
 .about-desc {
@@ -23,7 +25,7 @@
 }
 
 .about-highlight, .about-signoff, .about-mission {
-    color: #0044ff; /* blue */
+    color: black; /* blue */
     font-weight: bold;
     margin: 20px 0;
     font-size: 1.3em;
