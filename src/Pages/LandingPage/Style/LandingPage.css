@@ -25,6 +25,7 @@
     background-size: auto 55px;
     background-repeat: no-repeat;
     caret-color: transparent;
+    list-style: none;
 }
 .LandingPageTopNavText{
     display: flex;
@@ -34,7 +35,6 @@
     margin-bottom: -50%;
 }
 .LandingPageTopNavText li{
-    color: black;
     padding: 1rem;
     cursor: pointer;
 }
@@ -55,6 +55,7 @@
     font-size: 2cm;
     text-shadow:10px 10px 5px rgba(0, 0, 0, 0.2);
     margin-top: 10%;
+    color: rgb(250, 246, 246);
     margin-left: -47%;
 }
 .LandingPageBigText2{

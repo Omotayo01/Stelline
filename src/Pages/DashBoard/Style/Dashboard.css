@@ -1,0 +1,421 @@
+.Dashboard{
+ height: 99vh;
+border: solid 2pt rgb(112, 148, 216);
+caret-color: transparent;
+background-color: rgb(112, 122, 216);
+overflow: hidden;
+display: flex;
+
+}
+.aside{
+  width: 20rem;
+  height:90%;
+  margin: 2rem;
+  background-color: white;
+  border-radius: 8px;
+
+}
+
+.dp{
+  background-color: rgb(24, 23, 23);
+  width: 5rem;
+  height:5rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-left: 3.5rem;
+  margin-bottom: 90rem;
+}
+
+.aside li {
+  width: 10rem;
+  height:5%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.19);
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 6%;
+  margin-top: 1rem;
+  list-style:none;
+  background-color:rgb(236, 236, 236);
+
+}
+
+.realLi{
+  margin-top: -37cm;
+
+}
+
+.board{
+  width: 70rem;
+  height:90%;
+  background-color:white;
+  margin: 2rem;
+  border-radius: 8px
+}
+
+
+.boardInner{
+  width: 60rem;
+  height:40%;
+  /* border: solid 2pt red; */
+  margin: 2rem;
+  border-radius: 8px;
+  display: flex;
+}
+
+
+.bibox{
+  width: 29rem;
+  height:70%;
+  margin: 2rem;
+  background-color: rgb(234, 227, 228);
+  border-radius: 8px;
+  padding:1rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+  background-repeat: no-repeat;
+}
+.bibox1{
+  width: 29rem;
+  height:70%;
+  margin: 2rem;
+  background-color: rgb(234, 227, 228);
+  border-radius: 8px;
+  padding:1rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+  background-repeat:no-repeat;
+}
+.bibox2{
+  width: 29rem;
+  height:70%;
+  margin: 2rem;
+  background-color: rgb(234, 227, 228);
+  border-radius: 8px;
+  padding:1rem;
+
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+  background-repeat:no-repeat;
+  }
+  .bibox3{
+    width: 29rem;
+    height:70%;
+    margin: 2rem;
+    background-color: rgb(234, 227, 228);
+    border-radius: 8px;
+    padding:1rem;
+  
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
+    background-repeat:no-repeat;
+  }
+
+.addButton{
+  margin-bottom:auto;
+  background-color:black;
+  color:white;
+  border-radius: 1cm;
+  height:25%;
+  width:70%;
+  margin-top:2%;
+}
+.smallPageAddChild{
+  background-color: white;
+  height: 50vh;
+  border: solid 2pt palevioletred;
+border-radius: 0.8cm;
+  width: 100cm;
+}
+
+#gender {
+    background-color: palevioletred;
+    color: rgb(57, 55, 59);
+    border: solid 2pt rgba(255, 255, 255, 0.316);
+    border-radius: 0.6cm;
+    margin-top: 0.5cm;
+    height: 1.2cm;
+    border: solid 2pt red;
+    width: 85%;
+    /* border: none; */
+    outline: none;
+  }
+  .Find{
+    background-color: palevioletred;
+    color: rgb(57, 55, 59);
+    border: solid 2pt rgba(255, 255, 255, 0.316);
+    border-radius: 0.6cm;
+    margin-top: 0.5cm;
+    height: 1.2cm;
+    border: solid 2pt red;
+    width: 85%;
+    /* border: none; */
+    outline: none;
+  }
+.close{
+  background-color: white;
+  margin-top: 0.5cm;
+  margin-right: 6cm;
+}
+.notify{
+  background-color: palevioletred;
+  border: solid 2pt;
+}
+
+.profile-picture {
+  height: 2cm;
+  width: 2cm;
+  border-radius: 50px;
+  margin-left: 0.5cm;
+  caret-color: transparent;
+
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid 2pt black;
+  margin-right: -3cm;
+  border-radius: 50px;
+  margin-top: 0.5cm;
+}
+
+.dee {
+  margin-top: 5cm;
+  color: rgb(18, 17, 17);
+  margin-left: -1cm;
+  background-color: yellow;
+  width: 2.2cm;
+}
+
+.mt {
+  outline: none;
+  border: none;
+  background-color: rgb(47, 45, 45);
+  height: 0.7cm;
+  margin-right: 0.2cm;
+  border-radius: 10px;
+}
+.cl{
+  margin-top: -5cm;
+  width: 3cm;
+  margin-left: 12cm;
+  border: solid 2pt red;
+
+}
+.c2{
+  margin-left: 20cm;
+  margin-top: -59cm;
+  border: solid 2pt red;
+}
+.a{
+margin-right: 34cm;
+  height: 2cm;
+  width: 2cm;
+  margin-top: 1cm;
+}
+.smallPageAddChild {
+  width: 400px; 
+  height: 35px;
+}
+@media screen and (max-width: 1024px) {
+  .board{
+    width: 60%;
+    height: 110vh;
+  }
+  .Dashboard{
+    overflow: scroll;
+  }
+  .boardInner{
+    display: block;
+  }
+  .bibox{
+    width: 45%;
+    margin-left: -2.9%;
+    height: 45%;
+  }
+  .bibox1{
+    width: 45%;
+    margin-left: -2.9%;
+    height: 45%;
+    margin-top: 4rem;
+  }
+  .bibox2{
+    width: 45%;
+    margin-left: -2.9%;
+    margin-top: 8rem;
+    height: 45%;
+  }
+  .bibox3{
+    width: 45%;
+    margin-left: -2.9%;
+    margin-top: 3rem;
+    height: 45%;
+  }
+
+  .aside li {
+    margin-top: 3rem;
+    height: 2.5rem;
+  }
+  .realLi{
+    margin-top: -35cm;
+
+  }
+  .aside{
+    height: 110vh;
+  }
+ }
+
+ @media screen and (max-width: 700px) {
+  .board{
+    width: 55%;
+    height: 110vh;
+    margin-left: -2%;
+  }
+  .Dashboard{
+    overflow: scroll;
+  }
+  .boardInner{
+    display: block;
+  }
+  .bibox{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+  }
+  .bibox1{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+    margin-top: -2%;
+  }
+  .bibox2{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+    margin-top: 6%;
+
+  }
+  /* .dp{
+    margin-left: 19%;
+  } */
+  .bibox3{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+    margin-top: -2%;
+
+  }
+  .addButton{
+    width: 90%;
+    margin-top: 75%;
+  }
+
+  .aside li {
+    margin-top: 3rem;
+    height: 2.5rem;
+    width: 80%;
+  }
+  .realLi{
+    margin-top: -35cm;
+
+  }
+  .aside{
+    height: 110vh;
+    margin-left: -1.5%;
+    width: 40%;
+  }
+ 
+ }
+ @media screen and (max-width: 500px) {
+  .board{
+    width: 55%;
+    height: 110vh;
+    margin-left: -2%;
+  }
+  .Dashboard{
+    overflow: scroll;
+  }
+  .boardInner{
+    display: block;
+  }
+  .bibox{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+  }
+  .bibox1{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+    margin-top: 3%;
+  }
+  .bibox2{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+    margin-top: 6%;
+    margin-top: 11%;
+
+  }
+  /* .dp{
+    margin-left: 19%;
+  } */
+  .bibox3{
+    width: 17%;
+    margin-left: -2.9%;
+    height: 45%;
+    margin-top: -2%;
+    margin-top: 3%;
+
+  }
+  .addButton{
+    width: 90%;
+    margin-top: 55%;
+  }
+
+  .aside li {
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 80%;
+  }
+  .realLi{
+    margin-top: -37cm;
+
+  }
+  .aside{
+    height: 110vh;
+    margin-left: -1.5%;
+    width: 40%;
+  }
+ }
+ .Dashboardbackground-image{
+   height: 70%;
+  width: 50%;
+  margin-left: 25%;
+  background-image: url("../../../Assets/add-user.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+ }
+ .Dashboardbackground-image1{
+  height: 70%;
+  width: 50%;
+  margin-left: 25%;
+  background-image: url("../../../Assets/business-man.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+ }
+ .Dashboardbackground-image2{
+  height: 70%;
+  width: 50%;
+  margin-left: 25%;
+  background-image: url("../../../Assets/preferences.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+ }
+
+ .Dashboardbackground-image3{
+  height: 70%;
+  width: 50%;
+  margin-left: 25%;
+  background-image: url("../../../Assets/business.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+ }

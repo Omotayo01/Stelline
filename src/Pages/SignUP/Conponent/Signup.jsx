@@ -14,7 +14,7 @@ export const SignuP=()=>{
             minLength={11}
             name="emailAddress"
           />
-          <div className="SignUpEmail1">Continue</div>
+          <div className="SignUpEmail1" onClick={() => { window.location.href = "/Authentication" }}>Continue</div>
             </div>
         </div>
         </>

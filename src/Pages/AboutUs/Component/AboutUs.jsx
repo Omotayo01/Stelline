@@ -30,10 +30,6 @@ export function AboutUs() {
             </p>
 
             <div className="about-container">
-                {/* Your existing content here */}
-                {/* ... */}
-
-                {/* Add the styled button with the Link component */}
                 <Link to="/" className="get-started-button">Get Started</Link>
             </div>
         </div>

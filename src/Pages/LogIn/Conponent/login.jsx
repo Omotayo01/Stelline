@@ -16,9 +16,8 @@ export const Login=()=>{
           />
           Enter Password
           <input
-            type="password"
-            id="password"
-            placeholder="enter your password"
+              type="password"
+              placeholder="enter your password"
             className="LoginEmail"
             name="password"
           />

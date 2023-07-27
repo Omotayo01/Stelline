@@ -13,7 +13,8 @@ export const Authentication=()=>{
             minLength={11}
             name="emailAddress"
           />
-          <div className="AuthenticationEmail1"> Login</div>
+          <div className="AuthenticationEmail1"> Verify</div>
+          <div className="AuthenticationEmail1">Continue</div>
             </div>
             </div>
         </>
