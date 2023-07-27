@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../../RealRegister/Style/Register.css"
+import axios from "../../../api/axios";
 export const Register = () => {
+
+
   const [selectedAccount, setSelectedAccount] = useState("");
   const [genderType, setGenderType] = useState("");
   const [password, setPassword] = useState("");
@@ -21,11 +24,77 @@ export const Register = () => {
     }
   };
 
-  const registerUser = () => {
-    toast.success("User registration successful!", {
-      position: toast.POSITION.TOP_CENTER,
-    });
+
+  const emailAddress = localStorage.getItem('emailAddress')
+
+  const data = {
+    "emailAddress" : emailAddress,
+    "password" : password,
+    "userCategory" : selectedAccount,
+    "genderType": genderType
+   
+  }
+  console.log(data)
+
+  // const handleContinue =()=>{
+  //   if (confirmPassword === password){
+  //     setIsDisabled(false);
+  //   }
+  //   else{
+  //     setIsDisabled(true);
+  //   } 
+  // }
+   const saveToken = (token) => {
+    localStorage.setItem('jwtToken', token);
   };
+  const getToken = ()=>{
+    return localStorage.getItem('jwtToken')
+  }
+
+
+
+  const userRole = (jwtToken)=>{
+       
+        const [, payloadBase64] = jwtToken.split('.');
+        const payloadJSON = atob(payloadBase64);
+        const payload = JSON.parse(payloadJSON);
+        const userRoles = payload.roles; 
+    
+        
+        if(userRoles[0]=="PARENT"){
+          localStorage.setItem('parentEmailAddress', emailAddress)
+        
+          localStorage.setItem('parentToken', jwtToken)
+        console.log(userRoles);
+
+        window.location.href = "/Dashboard"
+        }
+
+        else{
+          localStorage.setItem('careTakerEmailAddress', emailAddress)
+          localStorage.setItem('careTakerToken', jwtToken)
+          window.location.href = "/CareTaker"
+        }
+      
+      }
+
+      const registerUser = async ()=>{
+        
+        try{
+          const response = await axios.post('/auth/register', data)
+         const jwtToken = response.data.data;
+         toast.success("Registration successful")
+          userRole(jwtToken);
+         
+       
+        }
+
+        catch(error){
+          toast.error("Registration Failed!!! \n Invalid Credentials")
+          console.error("Error : " , error)
+        }
+
+      }
 
   const isDisabled = selectedAccount && genderType && password && password === confirmPassword;
 
@@ -80,7 +149,6 @@ export const Register = () => {
         type="submit"
         className="RealContinue"
         onClick={registerUser}
-        disabled={!isDisabled}
       >
         Continue
       </button>

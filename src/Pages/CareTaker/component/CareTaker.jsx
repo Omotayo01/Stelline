@@ -31,21 +31,30 @@ return (
     <div className="board1">
       <div className="boardInner1">
         <div className="biboxx11">
+        <div class="background-image">
+</div>
           <button className="addButton1" onClick={() => {
         window.location.href = "/BookingRecords";
-      }}>Check work history </button>
+      }}>Check work history
+       </button>
         </div>
         <div className="biboxx1">
-          <button className="addButton" onClick={() => {
+        <div class="background-image2">
+</div>
+          <button className="addButton1" onClick={() => {
         window.location.href = "/ClockInOut";
       }}>Clock In/Clock out</button>
         </div>
       </div>
       <div className="boardInner1">
         <div className="biboxx21">
+        <div class="background-image1">
+</div>
           <button className="addButton1" onClick={() => { window.location.href = "/withdraw"; }}>Withdraw</button>
         </div>
         <div className="biboxx31">
+        <div class="background-image3">
+</div>
           <button className="addButton1">Add payment detail</button>
         </div>
       </div>

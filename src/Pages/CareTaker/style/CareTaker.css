@@ -1,9 +1,10 @@
 .Dashboard1{
     height: 99vh;
-   border: solid 2pt palevioletred;
+   border: solid 2pt rgb(30,144,255);
    caret-color: transparent;
    overflow: hidden;
    display: flex;
+   background-color: rgb(134, 134, 205);
    
    }
    
@@ -12,9 +13,8 @@
      width: 15rem;
      height:100%;
      margin: 2rem;
-     background-color: rgb(210, 211, 222);
+     background-color: rgb(245, 246, 248);
      border-radius: 8px;
-     border: solid 2pt red;
    }
    
    .dp1{
@@ -33,7 +33,6 @@
      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.19);
      margin: 1rem;
      border-radius: 8px;
-     border: solid 2pt red;
 
      list-style:none;
      background-color:rgb(225, 216, 216);
@@ -45,7 +44,6 @@
      width: 70rem;
      height:90%;
      background-color:white;
-     border: solid 2pt red;
 
      margin: 2rem;
      border-radius: 8px
@@ -68,9 +66,8 @@
      background-color: rgb(234, 227, 228);
      border-radius: 8px;
      padding:1rem;
-     background-image: url("../../../Assets/history.png");
-     background-size: 3cm;
-       background-size: 3cm;
+    
+       background-size: 50%;
      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
      background-repeat: no-repeat;
    }
@@ -81,8 +78,6 @@
      background-color: rgb(234, 227, 228);
      border-radius: 8px;
      padding:1rem;
-     background-image: url("../../../Assets/processing-time.png");
-       background-size: 3cm;
      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
      background-repeat:no-repeat;
    }
@@ -93,8 +88,7 @@
      background-color: rgb(234, 227, 228);
      border-radius: 8px;
      padding:1rem;
-     background-image: url("../../../Assets/cash-withdrawal.png");
-       background-size: 3cm;
+
      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
      background-repeat:no-repeat;
      }
@@ -106,7 +100,7 @@
        border-radius: 8px;
        padding:1rem;
          background-size: 3cm;
-         background-image: url(../../../Assets/email.png);
+        
        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.156);
        background-repeat:no-repeat;
      }
@@ -118,7 +112,7 @@
      border-radius: 1cm;
      height:25%;
      width:60%;
-     margin-top:30%;
+     margin-top:2%;
    }
    .smallPageAddChild1{
      background-color: white;
@@ -157,3 +151,35 @@
      margin-top: 0.5cm;
      margin-right: 6cm;
    } 
+   .background-image{
+    height: 70%;
+    width: 50%;
+    margin-left: 25%;
+    background-image: url("../../../Assets/work-history.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+   }
+   .background-image1{
+    height: 70%;
+    width: 50%;
+    margin-left: 25%;
+    background-image: url("../../../Assets/withdraw.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+   }
+   .background-image2{
+    height: 70%;
+    width: 50%;
+    margin-left: 25%;
+    background-image: url("../../../Assets/user-profile.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+   }
+   .background-image3{
+    height: 70%;
+    width: 50%;
+    margin-left: 25%;
+    background-image: url("../../../Assets/debit-card.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+   }
