@@ -8,6 +8,7 @@ import axios from "../../../api/axios";
     
 
     const [records, setRecords] = useState([]);
+    const careTakerEmailAddress = localStorage.getItem('careTakerEmailAddress')
   
 
      console.log("I got here");
@@ -17,7 +18,7 @@ import axios from "../../../api/axios";
       const fetchData = async () => {
         try {
           const response = await axios.post
-          (`/careTakerBookedSessions?careTakerEmailAddress=${encodeURIComponent("emailAddress9")}`);
+          (`/careTakerBookedSessions?careTakerEmailAddress=${encodeURIComponent(careTakerEmailAddress)}`);
           console.log("i'm here");
           const responseObject = response.data;
           console.log(response.request);
