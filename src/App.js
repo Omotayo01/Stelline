@@ -10,11 +10,6 @@ import { AddChild } from './Pages/AddChild/Conponent/AddChild';
 import ClockInOut from './Pages/ClockIn/conponent/ClockInOut';
 import FindPreferredCaretaker from './Pages/FindCaretaker/conponent/FindPreferredCaretaker';
 import { Register } from './Pages/RealRegister/Conponent/Register';
-<<<<<<< HEAD
-//import Dashboard from './Pages/DashBoard/Conponent/Dashboard';
-=======
-import { Dashboard } from './Pages/Dashboard/component/Dahboard';
->>>>>>> ffa485d59cf1322dca719f6843f7487ea4f583ac
 import { CareTaker } from './Pages/CareTaker/component/CareTaker';
 import { CareTakerBookingHistory } from './Pages/CareTakerBookingHistory/Conponent/CareTakerBookingHistory';
 import { ParentOrderBookingHistory } from './Pages/BookingHistory/Conponent/ParentBookingOrderHistory';
@@ -28,7 +23,6 @@ function App() {
           <Route path="/ParentOrderBookingHistory" element={< ParentOrderBookingHistory />} />
           <Route path="/CareTakerBookingHistory" element={<CareTakerBookingHistory />} />
           <Route path="/CareTaker" element={<CareTaker />} />
-          {/* <Route  path="/Dashboard" element={<Dashboard/>}/> */}
           <Route  path="/Register" element={< Register/>}/>
           <Route  path="/FindPreferredCaretaker" element={<FindPreferredCaretaker/>}/>
           <Route  path="/ClockInOut" element={<ClockInOut/>}/>
