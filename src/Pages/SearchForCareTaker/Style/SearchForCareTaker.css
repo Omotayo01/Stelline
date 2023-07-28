@@ -1,0 +1,34 @@
+.InformationSemiMain{
+    width: 40%;
+    height: 20cm;
+    margin-left: 30%;
+}
+.InformationMain{
+    background-color: rgb(140, 146, 213);
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 90vh;
+}
+.pai{
+    border: solid 2pt rgb(245, 241, 241);
+    width: 45%;
+}
+.InformationText{
+    width: 96%;
+    margin: 0.5rem;
+    border: solid 2pt black;
+    height: 10%;
+    border-radius: 1rem;
+}
+.InformationSemiMain li{
+    margin-top:5% ;
+    font-size: larger;
+    list-style: none;
+}
+.InformationText1{
+    height: 8%;
+    border-radius: 90cm;
+    width: 90%;
+    list-style: none;
+}
