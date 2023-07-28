@@ -1,0 +1,26 @@
+/* TimeRecords.css */
+
+.time-records {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .time {
+    flex: 1;
+    text-align: center;
+  }
+  

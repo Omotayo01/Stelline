@@ -3,24 +3,12 @@ import "../../BookingHistory/Style/BookingHistory.css"
 import { useState,useEffect } from "react";
 
 export const ParentOrderBookingHistory=()=>{
-    // const bookings = [
-    //     {
-    //       parentFullName: "John Doe",
-    //       numberOfKids: 2,
-    //       parentEmailAddress: "johndoe@example.com",
-    //       careTimeDuration: 4,
-    //       packageTimeDuration: "2 hours",
-    //       Amount :5472837
-    //     },
-      
-    //   ];
+  
     const bookings = JSON.parse(localStorage.getItem('bookCareTakerInfo'))
 
       return (
         <div className="dashboard-container">
           <h1>Booking Information</h1>
-          {/* {bookings.map((item, index) => ( */}
-          {/* key={index} */}
           
                      {bookings.message}
             <div className="booking-record">

@@ -10,17 +10,30 @@ export const Register = () => {
   const [genderType, setGenderType] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    if (name === "userType") {
-      setSelectedAccount(value);
-    } else if (name === "gender") {
-      setGenderType(value);
-    } else if (name === "password") {
-      setPassword(value);
-    } else if (name === "confirmPass") {
-      setConfirmPassword(value);
+
+    if (e.target.name == "userType"){
+      setSelectedAccount(e.target.value)
+    }
+  
+    if (e.target.name == "gender") {
+      setGenderType(e.target.value);
+    } 
+     if (e.target.name == "password") {
+      setPassword(e.target.value);
+    } 
+     if (e.target.name == "confirmPass") {
+      setConfirmPassword(e.target.value);
+    }
+   if(e.target.name=="firstName"){
+      setFirstName(e.target.value);
+    }
+   if(e.target.name =="lastName"){
+      setLastName(e.target.value);
     }
   };
 
@@ -31,7 +44,9 @@ export const Register = () => {
     "emailAddress" : emailAddress,
     "password" : password,
     "userCategory" : selectedAccount,
-    "genderType": genderType
+    "genderType": genderType,
+    "firstName" : firstName,
+    "lastName" : lastName
    
   }
   console.log(data)
@@ -133,6 +148,28 @@ export const Register = () => {
               className="Real"
               value={password}
               placeholder="password"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="real3">
+            <p className="RealT">Enter first name</p>
+            <input
+              type="text"
+              name="firstName"
+              className="Real"
+              value={firstName}
+              placeholder="first name"
+              onChange={handleChange}
+            />
+          </div>
+          <div className="real3">
+            <p className="RealT">Enter last name</p>
+            <input
+              type="text"
+              name="lastName"
+              className="Real"
+              value={lastName}
+              placeholder="last name"
               onChange={handleChange}
             />
           </div>

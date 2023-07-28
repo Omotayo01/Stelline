@@ -18,7 +18,7 @@ import axios from "../../../api/axios";
       const fetchData = async () => {
         try {
           const response = await axios.post
-          (`/parentBookedSessions?parentEmailAddress=${encodeURIComponent("emailAddress11")}`);
+          (`/parentBookedSessions?parentEmailAddress=${encodeURIComponent(parentEmailAddress)}`);
           console.log("i'm here");
           const responseObject = response.data;
           console.log(response.request);

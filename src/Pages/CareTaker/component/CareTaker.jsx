@@ -34,7 +34,7 @@ return (
         <div class="background-image">
 </div>
           <button className="addButton1" onClick={() => {
-        window.location.href = "/BookingRecords";
+        window.location.href = "/CareTakerWorkHistory";
       }}>Check work history
        </button>
         </div>

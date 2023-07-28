@@ -8,7 +8,7 @@ export const ClockInOut = () => {
   const [status, setStatus] = useState("");
   const [clockedIn, setClockedIn] = useState(false);
 
-  const emailAddress = localStorage.getItem('emailAddress');
+  const emailAddress = localStorage.getItem('careTakerEmailAddress');
 
   const handleClockIn = () => {
     axios
