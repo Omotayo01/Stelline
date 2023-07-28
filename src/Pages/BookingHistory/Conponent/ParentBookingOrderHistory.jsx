@@ -45,6 +45,9 @@ export const ParentOrderBookingHistory=()=>{
               <button className="ParentProceedToPaymentButton">
                 Proceed To Make Payment
               </button>
+              <button className="ParentProceedToPaymentButton" onClick={()=>{window.location.href="/DashBoard"}}>
+                GoTo Dashboard
+              </button>
             </div>
             </div>
           {/* ))} */}

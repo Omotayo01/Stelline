@@ -43,11 +43,10 @@ const FindPreferredCaretaker = () => {
     "timeDuration" : ""
   }
 
-  const emailAddress ="emailAddress11";
-  // localStorage.getItem('parentEmailAddress')
+  const emailAddress = localStorage.getItem('parentEmailAddress')
 
 
-//const jwtToken = localStorage.getItem('jwtToken')
+const jwtToken = localStorage.getItem('parentToken')
 
 
   const fetchData = async ()=>{
@@ -65,7 +64,7 @@ const FindPreferredCaretaker = () => {
 
     const response = await axios.post(`/careTaker/bookPreferredCareTaker?emailAddress=${encodeURIComponent(emailAddress)}`, jsonData,
     {
-     // headers:{Authorization : jwtToken}
+      headers:{Authorization : jwtToken}
     }
     )
     
@@ -78,7 +77,7 @@ const FindPreferredCaretaker = () => {
         console.log("i'm ", bookCareTakerInfoObject);
      //   (bookCareTakerInfoObject)
         localStorage.setItem('bookCareTakerInfo', bookCareTakerInfoObject)
-       // window.location.href = "/ParentOrderBookingHistory"
+        window.location.href = "/ParentOrderBookingHistory"
         
       })
     }
