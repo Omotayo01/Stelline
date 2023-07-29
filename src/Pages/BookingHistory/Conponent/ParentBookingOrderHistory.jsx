@@ -30,7 +30,9 @@ export const ParentOrderBookingHistory=()=>{
                 <p className="InformationinnerPTag1">{bookings.amount}</p>
 
               </div>
-              <button className="ParentProceedToPaymentButton">
+              <button className="ParentProceedToPaymentButton" onClick={() => {
+                window.location.href = "/MakePayment";}
+              }>
                 Proceed To Make Payment
               </button>
               <button className="ParentProceedToPaymentButton" onClick={()=>{window.location.href="/DashBoard"}}>
