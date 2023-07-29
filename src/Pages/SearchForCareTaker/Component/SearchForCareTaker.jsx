@@ -85,7 +85,8 @@ const SearchCareTaker=()=>{
                     console.log(response.data)
                     const bookCareTakerInfoObject = JSON.stringify(response.data)
                     localStorage.setItem('bookCareTakerInfo', bookCareTakerInfoObject)
-                    window.location.href = "/checkBookingInformation"
+                    toast.success("Successful")
+                    window.location.href = "/ParentOrderBookingHistory"
                 })
 
         }
@@ -93,7 +94,8 @@ const SearchCareTaker=()=>{
         catch(error){
 
             toast.error("Unsuccessful, please ensure to fill all fields")
-            window.location.href = "/information"
+            console.error("Error : " , error)
+            window.location.href = "/SearchCareTaker"
         }
 
     };

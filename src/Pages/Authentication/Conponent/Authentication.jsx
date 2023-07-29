@@ -45,7 +45,7 @@ const confirmOtp = async ()=>{
             onChange={handleChange}
           />
           <div className="AuthenticationEmail1" onClick={confirmOtp}> Verify</div>
-          <div className="AuthenticationEmail1">Continue</div>
+          {/*<div className="AuthenticationEmail1">Continue</div>*/}
             </div>
             </div>
         </>

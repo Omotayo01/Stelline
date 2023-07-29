@@ -16,13 +16,14 @@ import { ParentBookingHistory } from './Pages/ParentBookingHistory/Conponent/Par
 import {ClockInOut} from './Pages/ClockInAndOut/component/ClockInAndOut';
 import {CareTakerWorkHistory} from './Pages/CareTakerWorkHistory/component/WorkHistory';
 import { Dashboard } from './Pages/DashBoard/component/Dashboard';
-
 import SearchCareTaker from "./Pages/SearchForCareTaker/Component/SearchForCareTaker";
+import {MakePayment} from "./Pages/MakePayment/Component/MakePayment";
 function App() {
   return (
       <div className="App">
         <Router>
           <Routes>
+            <Route  path="/MakePayment" element={<MakePayment/>}/>
             <Route path="/SearchCareTaker" element={< SearchCareTaker />} />
           <Route path="/ParentBookingHistory" element={< ParentBookingHistory />} />
           <Route path="/ParentOrderBookingHistory" element={< ParentOrderBookingHistory />} />
