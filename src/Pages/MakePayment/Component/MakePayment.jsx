@@ -18,8 +18,6 @@ export const MakePayment = () => {
 
     const jwtToken = localStorage.getItem('jwtToken'); 
 
-    const paystackPublicKey =   'pk_live_96e19dee6710e1eedc64c188693ff871f66b6d87';
-    // 'sk_live_811b58a116bdbf7e8933d6aa18b2ed41dd2f1981';
    
 
     const handleSubmit = async (e) => {
@@ -79,7 +77,7 @@ export const MakePayment = () => {
                 reference={`pay_${Math.floor(Math.random() * 1000000000 + 1)}`}
                 email={email} // Customer email
                 amount={bookCareTakerInfo.amount * 100}
-                publicKey={paystackPublicKey}
+                // publicKey={paystackPublicKey}
             />
         </form>
     );
