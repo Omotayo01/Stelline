@@ -15,6 +15,7 @@ import { ParentOrderBookingHistory } from './Pages/BookingHistory/Conponent/Pare
 import { ParentBookingHistory } from './Pages/ParentBookingHistory/Conponent/ParentBooking';
 import {ClockInOut} from './Pages/ClockInAndOut/component/ClockInAndOut';
 import {CareTakerWorkHistory} from './Pages/CareTakerWorkHistory/component/WorkHistory';
+import { Dashboard } from './Pages/DashBoard/component/Dashboard';
 
 import SearchCareTaker from "./Pages/SearchForCareTaker/Component/SearchForCareTaker";
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/CareTakerWorkHistory" element={<CareTakerWorkHistory/>} />
           <Route path="/ClockInOut" element={<ClockInOut/>} />
           <Route path="/CareTaker" element={<CareTaker />} />
+          <Route path="/Dashboard" element={<Dashboard/>} />
           <Route  path="/Register" element={< Register/>}/>
           <Route  path="/FindPreferredCaretaker" element={<FindPreferredCaretaker/>}/>
           <Route  path="/Child" element={<AddChild/>}/>

@@ -31,7 +31,9 @@ export const Login=()=>{
         if(userRoles[0]=="PARENT"){
             localStorage.setItem('parentEmailAddress', emailAddress)
             localStorage.setItem('parentToken', jwtToken);
-            window.location.href = "/Dashboard"
+            
+            
+        window.location.href = "/Dashboard"
         }
         else{
             localStorage.setItem('careTakerEmailAddress', emailAddress)
