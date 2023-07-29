@@ -92,7 +92,7 @@ export const Dashboard = () => {
           <div className="bibox1">
           <div class="Dashboardbackground-image1">
 </div>
-            <button className="addButton"onClick={()=>{window.location.href="/Information"}} >
+            <button className="addButton"onClick={()=>{window.location.href="/SearchCareTaker"}} >
               find CareTaker
             </button>
           </div>

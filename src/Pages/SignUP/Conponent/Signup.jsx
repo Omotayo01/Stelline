@@ -23,13 +23,16 @@ export const SignuP=()=>{
               `/verifyEmail/sendOtp?emailAddress=${encodeURIComponent(
                 emailAddress
               )}`
-            );
+            )
+            
             if (response.data.successful === true) {
-              toast.success("OTP sent successfully!"); 
-              window.location.href = "/Authentication";
-            } else {
-              toast.error("Error: " + response.data); 
-            }
+              // toast.success("OTP sent successfully!"); 
+               window.location.href = "/Authentication";
+             } else {
+               toast.error("Error: " + response.data); 
+             }
+            ;
+          
           } catch (error) {
             toast.error("Error: " + error.message); 
             console.error("AxiosError:", error);
