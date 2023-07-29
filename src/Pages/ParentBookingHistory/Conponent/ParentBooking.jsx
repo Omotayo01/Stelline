@@ -52,14 +52,17 @@ import axios from "../../../api/axios";
                 <p className="ParentinnerPTag1">Care Time Duration</p>
                 <p className="ParentinnerPTag1">Package Time Duration</p>
                 <p className="ParentinnerPTag1">Care Giver's Email</p>
+                <p className="ParentinnerPTag1">Amount</p>
               </div>
-              <div className="order-box1 ">
+              {/* order-box1  initial name for the class before I changed it to Parentorder/Box*/}
+              <div className=" Parentorder-box">
                 <p className="ParentinnerPTag1">{item.parentFullName}</p>
                 <p className="ParentinnerPTag1">{item.numberOfKids +"kid(s)"}</p>
                 <p className="ParentinnerPTag1">{item.parentEmailAddress}</p>
                 <p className="ParentinnerPTag1">{item.careTimeDuration +"hrs(s)"} </p>
-                <p className="ParentinnerPTag1">{item.TimeDuration}</p>
+                <p className="ParentinnerPTag1">{item.timeDuration}</p>
                 <p className="ParentinnerPTag1">{item.careTakerEmailAddress}</p>
+                <p className="ParentinnerPTag1">{ "#"+item.amount}</p>
           </div>
           
         </div>
