@@ -85,7 +85,7 @@ export const Dashboard = () => {
           <div className="bibox">
           <div class="Dashboardbackground-image">
 </div>
-            <button className="addButton"  onClick={() => { window.location.href = "/AddChild"; }}>
+            <button className="addButton"  onClick={() => { window.location.href = "/Child"; }}>
               add a child
             </button>
           </div>
