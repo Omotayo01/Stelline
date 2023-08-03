@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios"; 
+import axios from "../../../api/axios";
 import "../../SignUP/Style/SignUp.css";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 export const SignuP = () => {
   const [emailAddress, setEmailAddress] = useState("");
@@ -23,12 +23,13 @@ export const SignuP = () => {
       );
       if (response.data.successful === true) {
         toast.success("OTP sent successfully!");
+        localStorage.setItem('emailAddress', emailAddress)
         window.location.href = "/Authentication";
       } else {
         toast.error("Error: " + response.data);
       }
     } catch (error) {
-      toast.error("Error: " + error.message);
+      //toast.error("Error: " + error.message);
       console.error("AxiosError:", error);
       console.error("Network Error Details: ", error.request);
     }
@@ -58,6 +59,7 @@ export const SignuP = () => {
             </button>
           </form>
         </div>
+        <ToastContainer/>
       </div>
     </>
   );
