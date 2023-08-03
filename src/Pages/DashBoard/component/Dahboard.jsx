@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../Dashboard/Style/Dashboard.css";
+import "../../DashBoard/Style/Dashboard.css";
 
 export const Dashboard = () => {
   const [showChildModal, setShowChildModal] = useState(false);
@@ -85,7 +85,7 @@ export const Dashboard = () => {
           <div className="bibox">
           <div class="Dashboardbackground-image">
 </div>
-            <button className="addButton"  onClick={() => { window.location.href = "/AddChild"; }}>
+            <button className="addButton"  onClick={() => { window.location.href = "/Child"; }}>
               add a child
             </button>
           </div>
@@ -101,7 +101,7 @@ export const Dashboard = () => {
           <div className="bibox2">
           <div class="Dashboardbackground-image2">
 </div>
-            <button className="addButton"onClick={() => { window.location.href = "/FindCaretaker"; }} >Find preferred CareTaker</button>
+            <button className="addButton"onClick={() => { window.location.href = "/FindPreferredCaretaker"; }} >Find preferred CareTaker</button>
           </div>
           <div className="bibox3">
           <div class="Dashboardbackground-image3">
