@@ -1,0 +1,45 @@
+
+.work-history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #689ed7; 
+    width: 50%;
+    color: #ffffff;
+    height: 80%;
+    margin-left: 25%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-history-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .work-history-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .work-history-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .work-history-container li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .work-history-container li::before {
+    content: "- ";
+  }
+  .work-history-Main{
+    background-image: url("../../../Assets/LatestStellineLogo.png");
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-size: 50vh;
+  }

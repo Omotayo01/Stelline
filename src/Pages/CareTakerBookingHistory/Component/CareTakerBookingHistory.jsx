@@ -37,7 +37,6 @@ import axios from "../../../api/axios";
     
     return (
       <div className="CareTakerdashboard-container">
-          uiyekujjk
 
          {records.map(item => (
         <div key={item.BookingId}>

@@ -35,7 +35,6 @@ export const CareTakerWorkHistory = () => {
 
   return (
     <div className="time-records">
-        hfdhbhvburwugb
       {records.map((record, index) => (
         <div key={index} className="record">
           <div className="time">{record.clockIn} clockedIn</div>
