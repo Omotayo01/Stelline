@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from '../../../api/axios';
 import { PaystackButton } from 'react-paystack';
+import { toast, ToastContainer } from 'react-toastify';
 
 export const MakePayment = () => {
     const [cardNumber, setCardNumber] = useState('');
@@ -46,11 +47,14 @@ export const MakePayment = () => {
             );
 
             if (response.status === 200) {
+                toast.success("Payment successful")
                 console.log('Payment successful!');
             } else {
+                toast.error("Payment Failed")
                 console.error('Payment failed!');
             }
         } catch (error) {
+            toast.error('An error occurred during payment processing:', error)
             console.error('An error occurred during payment processing:', error);
         }
     };
@@ -81,7 +85,9 @@ export const MakePayment = () => {
                 amount={bookCareTakerInfo.amount * 100}
                 publicKey={paystackPublicKey}
             />
+              <ToastContainer/>
         </form>
+      
     );
 };
 
