@@ -29,12 +29,12 @@ export const SignuP=()=>{
               // toast.success("OTP sent successfully!"); 
                window.location.href = "/Authentication";
              } else {
-               toast.error("Error: " + response.data); 
+               toast.error("Email already registered"); 
              }
             ;
           
           } catch (error) {
-            toast.error("Error: " + error.message); 
+            toast.error("Kindly connect to your internet"); 
             console.error("AxiosError:", error);
             console.error("Network Error Details: ", error.request);
           }
@@ -60,6 +60,7 @@ export const SignuP=()=>{
            >Continue</div>
             </div>
         </div>
+        <ToastContainer/>
         </>
     );
 }

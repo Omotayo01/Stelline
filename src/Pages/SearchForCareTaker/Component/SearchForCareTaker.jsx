@@ -56,11 +56,6 @@ const SearchCareTaker=()=>{
         const jwtToken = localStorage.getItem('jwtToken')
 
 
-        alert(careTimeDuration)
-        alert(gender)
-        alert(emailAddress)
-
-
         const jsonData = {
             "numberOfKids" : "",
             "timeDuration": "",
@@ -159,6 +154,7 @@ const SearchCareTaker=()=>{
                 </div>
 
             </div>
+            <ToastContainer/>
         </>
     )
 }

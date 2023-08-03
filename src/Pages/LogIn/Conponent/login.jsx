@@ -89,6 +89,8 @@ export const Login=()=>{
           <div className="LoginEmail1" onClick={userLogin}> Login</div>
             </div>
             </div>
+            <ToastContainer/>
         </>
+       
     )
 }
