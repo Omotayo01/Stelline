@@ -17,12 +17,14 @@ const confirmOtp = async ()=>{
     try{
     const response = await axios.post(`/verifyEmail/sendOtp/confirmOtp?otp=${encodeURIComponent(otp)}`);
     if(response.data.successful==true){
+        toast.success("An otp has been sent to your email")
     window.location.href = "/Register";
     }
     else{
     toast.error("Invalid Otp")
     }
     } catch(error){
+        toast.error("Network unavailable")
     console.error("AxiosError:", error);
     console.error("Network Error Details: ", error.request)}
     
@@ -45,7 +47,7 @@ const confirmOtp = async ()=>{
             onChange={handleChange}
           />
           <div className="AuthenticationEmail1" onClick={confirmOtp}> Verify</div>
-          <div className="AuthenticationEmail1">Continue</div>
+          {/*<div className="AuthenticationEmail1">Continue</div>*/}
             </div>
             </div>
         </>

@@ -15,7 +15,7 @@ export const SignuP = () => {
   };
 
   const handleFormSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
 
     try {
       const response = await axios.post(

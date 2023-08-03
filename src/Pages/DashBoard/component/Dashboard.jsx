@@ -72,8 +72,8 @@ export const Dashboard = () => {
         <div className="aside">
            <div className="dp"></div>
            <div className="realLi">
-          <li  onClick={() => { window.location.href = "/UpdateUserProfile"; }}>profile</li>
-          <li onClick={() => { window.location.href = "/BookingRecords"; }}>Check booking(s)</li>
+          <li  onClick={() => { }}>profile</li>
+          <li onClick={() => { window.location.href = "/ParentBookingHistory"; }}>Check booking(s)</li>
           <li onClick={handleLogout}>logOut</li>
           <li onClick={() => { window.location.href = "/report"; }} >Report A problem</li>
           </div>
@@ -92,7 +92,7 @@ export const Dashboard = () => {
           <div className="bibox1">
           <div class="Dashboardbackground-image1">
 </div>
-            <button className="addButton"onClick={()=>{window.location.href="/Information"}} >
+            <button className="addButton"onClick={()=>{window.location.href="/SearchCareTaker"}} >
               find CareTaker
             </button>
           </div>
