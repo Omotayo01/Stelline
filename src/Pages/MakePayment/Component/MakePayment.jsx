@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from '../../../api/axios';
 import { PaystackButton } from 'react-paystack';
+import { toast, ToastContainer } from 'react-toastify';
 
 export const MakePayment = () => {
     const [cardNumber, setCardNumber] = useState('');
@@ -18,6 +19,8 @@ export const MakePayment = () => {
 
     const jwtToken = localStorage.getItem('jwtToken'); 
 
+    const paystackPublicKey =   'pk_live_96e19dee6710e1eedc64c188693ff871f66b6d87';
+    // 'sk_live_811b58a116bdbf7e8933d6aa18b2ed41dd2f1981';
    
 
     const handleSubmit = async (e) => {
@@ -44,11 +47,14 @@ export const MakePayment = () => {
             );
 
             if (response.status === 200) {
+                toast.success("Payment successful")
                 console.log('Payment successful!');
             } else {
+                toast.error("Payment Failed")
                 console.error('Payment failed!');
             }
         } catch (error) {
+            toast.error('An error occurred during payment processing:', error)
             console.error('An error occurred during payment processing:', error);
         }
     };
@@ -77,9 +83,11 @@ export const MakePayment = () => {
                 reference={`pay_${Math.floor(Math.random() * 1000000000 + 1)}`}
                 email={email} // Customer email
                 amount={bookCareTakerInfo.amount * 100}
-                // publicKey={paystackPublicKey}
+                publicKey={paystackPublicKey}
             />
+              <ToastContainer/>
         </form>
+      
     );
 };
 

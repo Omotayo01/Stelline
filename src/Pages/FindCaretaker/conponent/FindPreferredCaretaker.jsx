@@ -12,7 +12,7 @@ const FindPreferredCaretaker = () => {
   const [lastName, setLastName] = useState("");
   const [timeDuration, setTimeDuration] = useState("");
   const [careTimeDuration, setCareTimeDuration] = useState("ONE");
-  const [numberOfKids, setNumberOfKids] = useState("");
+  const [numberOfKids, setNumberOfKids] = useState();
 
   const handleNameChange = (e) => {
     if(e.target.name=="firstName"){
@@ -20,9 +20,10 @@ const FindPreferredCaretaker = () => {
     if(e.target.name== "lastName"){
       setLastName(e.target.value)
     }
-    // if(e.target.name== "timeDuration"){
-    //   setTimeDuration(e.target.value)
-    // }
+     if(e.target.name== "timeDuration"){
+       setTimeDuration(e.target.value)
+     }
+  
     if(e.target.name=="careTimeDuration"){
       setCareTimeDuration(e.target.value)
     }
@@ -54,7 +55,7 @@ const jwtToken = localStorage.getItem('parentToken')
     jsonData.firstName = firstName;
     jsonData.lastName = lastName;
     jsonData.careTimeDuration = Number(careTimeDuration);
-    jsonData.timeDuration = "ONE";
+    jsonData.timeDuration = timeDuration;
     jsonData.numberOfKids = Number(numberOfKids);
 
     try{
@@ -82,6 +83,7 @@ const jwtToken = localStorage.getItem('parentToken')
       })
     }
     catch(error){
+      toast.error("unsuccessful, please input the right detials")
         console.log(error);
         console.log("error", error);
         console.log(jsonData.timeDuration);
@@ -127,7 +129,7 @@ const jwtToken = localStorage.getItem('parentToken')
           
           </form>
           <form className="search-form" >
-            <select placeholder="Enter package duration"  name="timeDuration"   >
+            <select placeholder="Enter package duration"  name="timeDuration" onChange={handleNameChange}  >
              <option value="ONE">1 Month</option>
              <option value="TWO">2 Months</option>
               </select>
@@ -147,9 +149,11 @@ const jwtToken = localStorage.getItem('parentToken')
               <button className="book-caretaker-button" onClick={fetchData} >
                 Book Caretaker
               </button>
-        <ToastContainer />
+        
       </div>
+      <ToastContainer />
       </div>
+    
   );
 };
 
