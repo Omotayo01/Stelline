@@ -37,9 +37,9 @@ import axios from "../../../api/axios";
     
     return (
       <div className="CareTakerdashboard-container">
-        
 
-         {records.map(item => (
+        
+        {records.map(item => (
         <div key={item.BookingId}>
         <div className="CareTakerdashboard-header">
           <h1>Welcome, Caretaker!</h1>

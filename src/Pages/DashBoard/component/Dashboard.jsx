@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../../DashBoard/Style/Dashboard.css'
+import "../../DashBoard/Style/Dashboard.css";
 
 export const Dashboard = () => {
   const [showChildModal, setShowChildModal] = useState(false);
