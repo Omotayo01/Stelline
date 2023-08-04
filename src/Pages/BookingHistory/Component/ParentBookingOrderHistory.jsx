@@ -18,7 +18,7 @@ export const ParentOrderBookingHistory=()=>{
                 <p className="InformationinnerPTag1">Number of Kids</p>
                 <p className="InformationinnerPTag1">Care Giver Email Address</p>
                 <p className="InformationinnerPTag1">Care Time Duration</p>
-                <p className="InformationinnerPTag1">Package Time Duration</p>
+                <p className="InformationinnerPTag1">Package Month Duration</p>
                 <p className="InformationinnerPTag1">Amount</p>
               </div>
               <div className="order-box1 ">

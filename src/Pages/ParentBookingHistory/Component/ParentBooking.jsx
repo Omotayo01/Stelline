@@ -33,12 +33,24 @@ import axios from "../../../api/axios";
 
     }, [])
 
-
+  
 
     return (
+
+
+   
+
       <div className="Parentdashboard-container">
-      
+          
+           {(Records.length===0)&&(
+        <div  style={{ textAlign: "center" }}>
+            <h1 className="headingStyle">You have no booking History</h1>
+        </div>
+      )}
+    
          {Records.map(item => (
+          
+
         <div key={item.BookingId}>
         <div className="Parentdashboard-header">
           <h1>Welcome, Dear Parent</h1>
@@ -46,17 +58,19 @@ import axios from "../../../api/axios";
         </div>
         <div className="Parentdashboard-content">
           <div className="Parentorder-box">
+          <p className="ParentinnerPTag1">Booking Id</p>
           <p className="ParentinnerPTag1">Parent Name</p>
                 <p className="ParentinnerPTag1">Number of Kids</p>
                 <p className="ParentinnerPTag1">Parent Email Address</p>
                 <p className="ParentinnerPTag1">Care Time Duration</p>
-                <p className="ParentinnerPTag1">Package Time Duration</p>
+                <p className="ParentinnerPTag1">Package Month Duration</p>
                 <p className="ParentinnerPTag1">Care Giver's Email</p>
                 <p className="ParentinnerPTag1">Amount</p>
                 <p className="ParentinnerPTag1">Payment Status</p>
               </div>
               {/* order-box1  initial name for the class before I changed it to Parentorder/Box*/}
               <div className=" Parentorder-box">
+              <p className="ParentinnerPTag1">{item.bookingId}</p>
                 <p className="ParentinnerPTag1">{item.parentFullName}</p>
                 <p className="ParentinnerPTag1">{item.numberOfKids +"kid(s)"}</p>
                 <p className="ParentinnerPTag1">{item.parentEmailAddress}</p>
@@ -65,6 +79,7 @@ import axios from "../../../api/axios";
                 <p className="ParentinnerPTag1">{item.careTakerEmailAddress}</p>
                 <p className="ParentinnerPTag1">{ "#"+item.amount}</p>
                 <p className="ParentinnerPTag1">{ item.paymentStatus}</p>
+                
              
           </div>
           
