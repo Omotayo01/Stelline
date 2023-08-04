@@ -37,9 +37,15 @@ import axios from "../../../api/axios";
     
     return (
       <div className="CareTakerdashboard-container">
-        
 
-         {records.map(item => (
+
+{(records.length===0)&&(
+        <div  style={{ textAlign: "center" }}>
+            <h1 className="NoRecordHeadingStyle">You have no booking History</h1>
+        </div>
+      )}
+        
+        {records.map(item => (
         <div key={item.BookingId}>
         <div className="CareTakerdashboard-header">
           <h1>Welcome, Caretaker!</h1>
@@ -52,7 +58,7 @@ import axios from "../../../api/axios";
                 <p className="CareTakerinnerPTag1">Number of Kids</p>
                 <p className="CareTakerinnerPTag1">Parent Email Address</p>
                 <p className="CareTakerinnerPTag1">Care Time Duration</p>
-                <p className="CareTakerinnerPTag1">Package Time Duration</p>
+                <p className="CareTakerinnerPTag1">Package Month Duration</p>
                 <p className="CareTakerinnerPTag1">Care Giver Email</p>
               </div>
               <div className="CareTakerorder-box ">

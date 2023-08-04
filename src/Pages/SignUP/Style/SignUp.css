@@ -29,7 +29,7 @@
     margin-top: 12%;
 }
 .SignUpEmail1{
-    width: 130%;
+    width: 145%;
     height: 10%;
     margin-left: -21%;
     border: solid 2pt rgb(35, 8, 240);
@@ -37,6 +37,8 @@
     background-color: blue;
     color: whitesmoke;
     border-radius: 1rem;
+    cursor: progress;
+
     outline: none;
     caret-color: black;
     margin-top: 12%;

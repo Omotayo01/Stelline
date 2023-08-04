@@ -18,14 +18,14 @@ export const ParentOrderBookingHistory=()=>{
                 <p className="InformationinnerPTag1">Number of Kids</p>
                 <p className="InformationinnerPTag1">Care Giver Email Address</p>
                 <p className="InformationinnerPTag1">Care Time Duration</p>
-                <p className="InformationinnerPTag1">Package Time Duration</p>
+                <p className="InformationinnerPTag1">Package Month Duration</p>
                 <p className="InformationinnerPTag1">Amount</p>
               </div>
               <div className="order-box1 ">
                 <p className="InformationinnerPTag1">{bookings.parentFullName}</p>
-                <p className="InformationinnerPTag1">{bookings.numberOfKids} kid(s)</p>
+                <p className="InformationinnerPTag1">{bookings.numberOfKids + " " + "kid(s)"} </p>
                 <p className="InformationinnerPTag1">{bookings.careTakerEmailAddress}</p>
-                <p className="InformationinnerPTag1">{bookings.careTimeDuration} hrs(s)</p>
+                <p className="InformationinnerPTag1">{bookings.careTimeDuration +" "+ "hr(s)"}</p>
                 <p className="InformationinnerPTag1">{bookings.timeDuration}</p>
                 <p className="InformationinnerPTag1">{bookings.amount}</p>
 
