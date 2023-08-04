@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../../AddChild/Style/AddChild.css"; 
+import axios from "../../../api/axios";
+import { toast, ToastContainer } from "react-toastify";
 
 export const AddChild = () => {
   const [childData, setChildInfo] = useState({
@@ -28,10 +30,70 @@ export const AddChild = () => {
   currentDate.setFullYear(currentDate.getFullYear() - 3);
   const maxDate = currentDate.toISOString().split("T")[0];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Child Info:", childData);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Child Info:", childData);
+  // };
+
+  const emailAddress = localStorage.getItem('parentEmailAddress')
+    
+  // useEffect(() => {
+  //     const requiredFields = [
+  //         "firstName",
+  //         "lastName",
+  //         "gender",
+  //         "dateOfBirth",
+  //         "specialNeedCategory",
+  //         "homeAddress",
+  //     ];
+  //     const filled = requiredFields.every((field) => !!childData[field]);
+  //     setAreFieldsFilled(filled);
+
+  // }, [childData]);
+
+
+
+
+  const handleSubmit = async (event) => {
+      event.preventDefault();
+
+      console.log(childData);
+      const jwtToken = localStorage.getItem("parentToken");
+      console.log(jwtToken);
+      
+
+      try{
+          const response = await axios.post(`/parent/addChild?parentEmail=${encodeURIComponent(emailAddress)}`, 
+          childData, 
+          {headers : {
+              "Authorization": jwtToken
+          }
+          
+      })
+     console.log(jwtToken)
+          console.log("response:", response.data);
+          if(response.data.successful===true){
+              toast.success(response.data.data)
+          console.log(response.data.data);
+          window.location.href = "/Dashboard";
+      }    
+      else{
+          console.log(response.data.data)
+          console.log(response.data);
+          toast.success(response.data.data)
+      
+          window.location.href = "/AddChild"
+
+      }
+      }
+      catch(error){
+          console.log(error)
+          console.log(error);
+          window.location.href = "/AddChild"
+      }
+
   };
+ 
 
   return (
     <div className="MainContainer">
@@ -110,9 +172,10 @@ export const AddChild = () => {
             onChange={handleChange}
         />
 
-        <button type="submit">Add Child</button>
+        <button type="submit" onClick={handleSubmit}>Add Child</button>
       </form>
     </div>
+    <ToastContainer/>
     </div>
   );
 };
