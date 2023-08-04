@@ -38,8 +38,6 @@ import axios from "../../../api/axios";
     return (
 
 
-   
-
       <div className="Parentdashboard-container">
           
            {(Records.length===0)&&(
